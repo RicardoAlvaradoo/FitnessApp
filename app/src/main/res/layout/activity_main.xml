@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/routine"
+        android:layout_width="155dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="33dp"
+        android:onClick="routineLaunch"
+        android:text="Workout Routine"
+        app:backgroundTint="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/progress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="155dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="191dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="213dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button7"
+        app:layout_constraintTop_toBottomOf="@+id/progress" />
+
+    <Button
+        android:id="@+id/progress"
+        android:layout_width="155dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="99dp"
+        android:layout_marginEnd="38dp"
+        android:text="Progress"
+        app:backgroundTint="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/routine"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="155dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="194dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="213dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/routine"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
